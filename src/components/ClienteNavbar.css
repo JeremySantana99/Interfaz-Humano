@@ -1,0 +1,80 @@
+.navbar-cliente {
+  background-color: #e6f2ff;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.titulo {
+  font-size: 1.3rem;
+  margin-right: 2rem;
+  color: #003366;
+}
+
+.menu-horizontal button {
+  background: none;
+  border: none;
+  margin: 0 0.4rem;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  transition: background-color 0.2s ease;
+}
+
+.menu-horizontal button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.navbar-derecha {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bienvenida {
+  margin-right: 1rem;
+  color: #222;
+  font-weight: 500;
+}
+
+.hamburguesa {
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 2.8rem;
+  right: 0;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 170px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  padding: 0.7rem 1rem;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+}

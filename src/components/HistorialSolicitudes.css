@@ -1,0 +1,90 @@
+/* Contenedor principal */
+.historial {
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Lista de tarjetas de solicitudes */
+.historial ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Tarjeta de solicitud */
+.historial li {
+  background-color: #f9f9f9;
+  border-left: 6px solid #007acc;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.historial li:hover {
+  background-color: #f0f8ff;
+}
+
+/* Etiquetas y campos */
+.historial label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.historial input,
+.historial select,
+.historial textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.historial textarea {
+  min-height: 80px;
+}
+
+/* Botones */
+.historial button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  margin-right: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.historial button:hover {
+  background-color: #005fa3;
+}
+
+.historial .error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.historial .success {
+  color: green;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .historial {
+    padding: 1rem;
+  }
+
+  .historial button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

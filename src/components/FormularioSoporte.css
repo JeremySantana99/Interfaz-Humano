@@ -1,0 +1,82 @@
+.formulario-soporte {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background: #f9fcff;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.formulario-soporte h2 {
+  margin-bottom: 0.5rem;
+  color: #004080;
+}
+
+.formulario-soporte p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+  color: #333;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #007acc;
+  color: white;
+}
+
+button[type="button"] {
+  background-color: #ccc;
+  color: #222;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+}
+
+.exito {
+  color: green;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.captcha {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
