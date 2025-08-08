@@ -1,8 +1,7 @@
-
 import "./App.css";
 
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom"; // Solo dejamos Router
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import InfoCards from "./components/InfoCards";
@@ -27,10 +26,22 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {!user && <><Header /><Hero /><InfoCards /><Modals onLogin={handleLogin} /><Footer /></>}
+        {!user && (
+          <>
+            <Header />
+            <Hero />
+            <InfoCards />
+            <Modals onLogin={handleLogin} />
+            <Footer />
+          </>
+        )}
 
-        {user && user.tipo === "cliente" && <ClienteHome nombre={user.nombre} onLogout={handleLogout} />}
-        {user && user.tipo === "admin" && <AdminHome nombre={user.nombre} onLogout={handleLogout} />}
+        {user && user.tipo === "cliente" && (
+          <ClienteHome nombre={user.nombre} onLogout={handleLogout} />
+        )}
+        {user && user.tipo === "admin" && (
+          <AdminHome nombre={user.nombre} onLogout={handleLogout} />
+        )}
       </div>
     </Router>
   );
